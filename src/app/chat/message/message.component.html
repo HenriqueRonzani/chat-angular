@@ -1,0 +1,7 @@
+<p
+  class="border border-b-slate-700 rounded-2xl p-2 w-fit max-w-full"
+  [class.user]="message.sender === 'user'"
+  [class.attendant]="message.sender === 'attendant'"
+>
+  {{ message.text }}
+</p>

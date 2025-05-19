@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <div class="chat-container">
+    <header class="flex h-1/12 bg-orange-50 border-b border-b-slate-800 rounded-2xl">
+      <span class="text-3xl m-auto my-auto w-fit">Chat com atendente</span>
+    </header>
+    <div class="content">
+      <app-message *ngFor="let message of messages" [message]="message"></app-message>
+    </div>
+    <div class="form-container">
+      <app-send-message-input (send)="handleSend($event)"></app-send-message-input>
+    </div>
+  </div>
+</div>
+

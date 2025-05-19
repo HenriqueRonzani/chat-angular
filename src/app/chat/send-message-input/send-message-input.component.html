@@ -1,0 +1,17 @@
+<form
+  class="send-message-form h-full p-2 gap-5 flex flex-row"
+  (submit)="onSubmit($event)"
+>
+  <input
+    class="bg-slate-200 h-full w-3/4 rounded-2xl p-2"
+    type="text"
+    [(ngModel)]="messageText"
+    name="message"
+    placeholder="Digite sua mensagem aqui..."
+  >
+  <input
+    class="bg-green-200 rounded-2xl h-full w-1/4"
+    type="submit"
+    value="Enviar"
+  >
+</form>
